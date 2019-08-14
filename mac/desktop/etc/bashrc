@@ -9,9 +9,10 @@ shopt -s checkwinsize
 
 [ -r "/etc/bashrc_$TERM_PROGRAM" ] && . "/etc/bashrc_$TERM_PROGRAM"
 
-if [ -z "$TMUX" ]; then
-  tmux attach || tmux new
-fi
+ if [ -z "$TMUX" ]; then
+   tmux attach || tmux new
+ fi
 
 
-export PATH=/opt/local/bin:/usr/local/Cellar/mtr/0.92/sbin/:$PATH
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:/opt/local/bin:/usr/local/Cellar/mtr/0.92/sbin/:$PATH
