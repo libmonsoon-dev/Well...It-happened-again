@@ -5,3 +5,4 @@ go get -u -v \
   github.com/cheekybits/genny \
   github.com/gopherjs/gopherjs \
   golang.org/x/vgo \
+  github.com/gulyasm/jsonui \
