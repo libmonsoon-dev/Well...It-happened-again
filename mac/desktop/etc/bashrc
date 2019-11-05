@@ -8,3 +8,7 @@ PS1='\h:\W \u\$ '
 shopt -s checkwinsize
 
 [ -r "/etc/bashrc_$TERM_PROGRAM" ] && . "/etc/bashrc_$TERM_PROGRAM"
+
+if [ -r ~/.bashrc ]; then
+   source ~/.bashrc
+fi
