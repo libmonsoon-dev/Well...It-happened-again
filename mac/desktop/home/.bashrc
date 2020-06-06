@@ -10,6 +10,14 @@ export PATH=/usr/local/go/bin/:$GOPATH/bin:/opt/local/bin:/usr/local/Cellar/mtr/
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '$HOME/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/$HOME/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/$HOME/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/$HOME/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
 if [ -z "$TMUX"] && [ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ]; then
   tmux attach || tmux new
 fi
+
+source <(kubectl completion bash)
