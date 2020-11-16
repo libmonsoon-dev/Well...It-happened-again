@@ -20,4 +20,5 @@ sudo apt install -y \
 	docker-compose \
 	tree \
 	tmux \
+	python3-pip \
 	xonsh
