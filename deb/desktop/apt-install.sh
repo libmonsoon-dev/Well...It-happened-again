@@ -12,7 +12,6 @@ sudo apt install -y \
 	apache2-utils \
 	lazygit \
 	telegram-desktop \
-	gstreamer1.0-tool \
 	chromium-browser \
 	vlc \
 	golang \
@@ -20,5 +19,4 @@ sudo apt install -y \
 	docker-compose \
 	tree \
 	tmux \
-	python3-pip \
 	xonsh
