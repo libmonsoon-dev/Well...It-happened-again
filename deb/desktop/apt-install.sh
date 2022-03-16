@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
 sudo add-apt-repository -y ppa:lazygit-team/release && \
+sudo add-apt-repository -y ppa:longsleep/golang-backports && \
 sudo apt update && \
 sudo apt upgrade && \
 sudo apt install -y \
+  openvpn \
+  network-manager-openvpn \
 	keepassx \
 	ncdu \
 	mc \
