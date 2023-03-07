@@ -1,0 +1,1 @@
+daniil_stepanenko ALL = NOPASSWD: /usr/bin/snap refresh firefox
