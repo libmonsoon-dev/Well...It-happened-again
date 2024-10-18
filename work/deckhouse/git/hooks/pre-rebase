@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+git reset --soft "$(git merge-base HEAD main)" && git commit --reuse-message=HEAD@\{1\}
+

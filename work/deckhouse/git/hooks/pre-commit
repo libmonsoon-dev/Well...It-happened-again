@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+#TODO: remove this
+false
+
+#TODO go run idea-configuration-runner@latest \
+# build_all.xml \
+# build_all_tests.xml \
+# TestUpdater.xml \
+# TestDeckhouseReleaseController.xml \
+# TestModuleReleaseController.xml \
+# TestPullOverrideController.xml
+#golangci-lint run
