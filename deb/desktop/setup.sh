@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-sudo add-apt-repository -y ppa:lazygit-team/release && \
-sudo add-apt-repository -y ppa:longsleep/golang-backports && \
-sudo apt update && \
-sudo apt upgrade && \
+source ../../bash.lib.sh
+
+sudo apt update
+sudo apt upgrade
 sudo apt install -y \
+  snapd \
   openvpn \
   network-manager-openvpn \
 	keepassx \
@@ -12,16 +13,20 @@ sudo apt install -y \
 	mc \
 	htop \
 	curl \
+	xdg-utils \
 	net-tools \
 	apache2-utils \
-	lazygit \
-	telegram-desktop \
 	chromium-browser \
+	firefox \
 	vlc \
-	golang \
 	docker \
 	docker-compose \
 	tree \
 	tmux \
 	python3-pip \
 	xonsh
+sudo apt autoremove -y
+
+sudo snap remove firefox
+sudo snap install telegram-desktop
+sudo snap refresh
