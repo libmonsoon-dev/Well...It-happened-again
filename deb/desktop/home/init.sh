@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 
-set -uxo pipefail
-echo "Running as ${USER}"
+source "$(dirname "$0")/../../../bash.lib.sh"
+set +e
 
-sleep 30
+echo "Running as ${USER}"
+env
+
+# TODO: try remove sleep
+sleep 3
 
 /usr/bin/firefox &
+thunderbird &
+#spotify || "spotify error" &
 
-sudo snap refresh firefox || echo "snap refresh error"
-sleep 5
-/snap/bin/firefox || echo "snap firefox error" &
-TZ="Europe/Kiev" teams || echo "teams error" &
-spotify || "spotify error" &
-
-konsole -e "bash -c 'tmux attach || tmux'" || echo "konsole error" &
-
+konsole -e "bash -c 'tmux attach || tmux'" &
+# TODO: auto link to ~/init.sh
+# TODO: generate and execute *.desktop files with dex -ad
