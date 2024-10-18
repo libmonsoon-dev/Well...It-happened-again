@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 #TODO: remove this
-false
+exit 1
 
 #TODO go run idea-configuration-runner@latest \
 # build_all.xml \
