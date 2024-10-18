@@ -20,6 +20,7 @@ COMMANDS=(
   github.com/gopherjs/gopherjs
   github.com/mikefarah/yq/v4
   github.com/gulyasm/jsonui
+  golang.org/x/mobile/cmd/gomobile
 )
 
 for COMMAND in "${COMMANDS[@]}"; do
