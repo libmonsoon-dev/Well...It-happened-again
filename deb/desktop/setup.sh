@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source ../../bash.lib.sh
+source  "$(dirname "$0")/../../bash.lib.sh"
 
 sudo apt update
 sudo apt upgrade
