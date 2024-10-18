@@ -2,5 +2,14 @@
 
 set -euxo pipefail
 
-git reset --soft "$(git merge-base HEAD main)" && git commit --reuse-message=HEAD@\{1\}
+FROM="${1}"
+TO="${2-}"
+if [ -z "${TO}" ]; then
+  TO="$(git branch --show-current)"
+fi
 
+echo "Rebasing from ${FROM} to ${TO}"
+COMMIT="$(git merge-base HEAD main)"
+echo "Reset to merge base commit: $COMMIT"
+git reset --soft "$COMMIT"
+git commit --reuse-message=HEAD@{1}
