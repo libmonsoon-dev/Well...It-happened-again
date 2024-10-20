@@ -2,6 +2,7 @@
 
 source "$(dirname "$0")/../bash.lib.sh"
 
+#TODO: manual action func
 if [ -z "$(which go)" ]; then
   open https://go.dev/doc/install
 fi
@@ -12,6 +13,7 @@ while [ -z "$(which go)" ]; do
 done
 
 
+#TODO: add github.com/hairyhenderson/gomplate/cmd/gomplate
 COMMANDS=(
   github.com/restic/restic/cmd/restic
   github.com/jesseduffield/lazygit
@@ -21,6 +23,8 @@ COMMANDS=(
   github.com/mikefarah/yq/v4
   github.com/gulyasm/jsonui
   golang.org/x/mobile/cmd/gomobile
+  github.com/go-delve/delve/cmd/dlv
+  github.com/gohugoio/hugo
 )
 
 for COMMAND in "${COMMANDS[@]}"; do
@@ -29,3 +33,5 @@ done
 
 #TODO: write yqui based on yq and jsonui
 #TODO: add golang.org/x/vgo
+#TODO: manual action: link ${GOPATH}/bin/dlv to ${GOLAND_DIR}/plugins/go-plugin/lib/dlv/linux/dlv
+#TODO: try migrate to ansible or terraform
