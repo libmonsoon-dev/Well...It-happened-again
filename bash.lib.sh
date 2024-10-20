@@ -22,6 +22,7 @@ If src is a path to a symbolic link does nothing."
     fi
 }
 
+# TODO: link_no_project_file function
 function link_project_file() {
     local SRC=${1}
     local DST=${2}
