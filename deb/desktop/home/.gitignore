@@ -99,3 +99,8 @@ config/VirtualBox/
 config/vlc/
 config/xonsh/
 config/xsettingsd/
+
+# TODO: remove this rules
+config/*rc
+config/*.conf
+config/*.history
