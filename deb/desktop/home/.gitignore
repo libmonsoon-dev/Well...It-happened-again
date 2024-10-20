@@ -1,0 +1,101 @@
+# Some developers don't understand what configurations are and how they differ from caches, backups, assets, etc...
+# Current lewdness top:
+# $ ncdu ~/.config
+#    1,1 GiB [##########] /Microsoft
+#  911,1 MiB [#######   ] /Slack
+#  696,7 MiB [#####     ] /Code
+#  550,0 MiB [####      ] /Prospect Mail
+#  389,9 MiB [###       ] /discord
+#  346,5 MiB [##        ] /unity3d
+#  177,8 MiB [#         ] /VirtualBox
+#  121,5 MiB [#         ] /LOOP
+#  103,2 MiB [          ] /Google
+#   68,7 MiB [          ] /JetBrains
+#   63,6 MiB [          ] /skypeforlinux
+#   51,9 MiB [          ] /QtProject
+#   27,7 MiB [          ] /spotify
+#   19,1 MiB [          ] /cef_user_data
+#    9,8 MiB [          ] /libreoffice
+#    6,0 MiB [          ] /Vampire_Survivors
+#    5,0 MiB [          ] /Outline
+#    4,9 MiB [          ] /Outline Manager
+#    4,4 MiB [          ] /Insync
+#    3,0 MiB [          ] /chromium
+#    2,7 MiB [          ] /obs-studio
+
+# Ok, lets start from ignore all that show ls -d:
+# $ ls -a -d deb/desktop/home/config/*/ | xclip -sel clip
+
+config/AmneziaVPN.ORG/
+config/Android Open Source Project/
+config/autostart/
+config/autostart-scripts/
+config/cef_user_data/
+config/chromium/
+config/clangd/
+config/com.yuezk.qt/
+config/configstore/
+config/dconf/
+config/discord/
+config/Discord/
+config/dlv/
+config/Electron/
+config/fontconfig/
+config/fyne/
+config/GIMP/
+config/glib-2.0/
+config/go/
+config/Google/
+config/gtk-2.0/
+config/gtk-3.0/
+config/gtk-4.0/
+config/ibus/
+config/inkscape/
+config/Insync/
+config/JetBrains/
+config/KDE/
+config/kdeconnect/
+config/kdedefaults/
+config/kde.org/
+config/keepassx/
+config/lazygit/
+config/libaccounts-glib/
+config/libreoffice/
+config/LOOP/
+config/Loop_Hero/
+config/Master of Orion/
+config/matplotlib/
+config/menus/
+config/Microsoft Teams - Preview/
+config/neofetch/
+config/nextjs-nodejs/
+config/obs-studio/
+config/octave/
+config/Outline/
+config/Outline Manager/
+config/paradox-launcher-v2/
+config/pavucontrol-qt/
+config/plasma-workspace/
+config/procps/
+config/pulse/
+config/pulse.bak/
+config/Qt/
+config/QtProject/
+config/QuasarApp/
+config/Raspberry Pi/
+config/session/
+config/shadowsocks-qt5/
+config/skypeforlinux/
+config/spotify/
+config/teams/
+config/teams (deleted)/
+config/torbrowser/
+config/unity3d/
+config/Unknown Organization/
+config/Vampire_Survivors/
+config/Vampire_Survivors_297602892/
+config/Vampire_Survivors_Data/
+config/VirtualBox/
+config/vlc/
+config/xonsh/
+config/xsettingsd/
