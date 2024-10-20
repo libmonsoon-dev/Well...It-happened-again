@@ -2,10 +2,15 @@
 
 source  "$(dirname "$0")/../../bash.lib.sh"
 
+#TODO: install docker engine https://docs.docker.com/engine/install/ubuntu/
 sudo apt update
 sudo apt upgrade
 sudo apt install -y \
   snapd \
+  xclip \
+  cloud-init \
+  libnotify-bin \
+  cmake-format \
   openvpn \
   network-manager-openvpn \
 	keepassx \
