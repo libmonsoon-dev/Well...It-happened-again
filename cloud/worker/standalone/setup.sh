@@ -8,4 +8,5 @@ CONFIG=/tmp/standalone-cloud-init.yaml
 
 gomplate < "${TEMPLATE}" > "${CONFIG}"
 cloud-init schema --config-file ${CONFIG}
-yq ${CONFIG} | xclip -sel clip
+yq ${CONFIG}
+xclip -sel clip <${CONFIG}
