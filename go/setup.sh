@@ -25,6 +25,7 @@ COMMANDS=(
   golang.org/x/mobile/cmd/gomobile
   github.com/go-delve/delve/cmd/dlv
   github.com/gohugoio/hugo
+  github.com/golangci/golangci-lint/cmd/golangci-lint
 )
 
 for COMMAND in "${COMMANDS[@]}"; do
