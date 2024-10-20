@@ -104,3 +104,11 @@ config/xsettingsd/
 config/*rc
 config/*.conf
 config/*.history
+config/gtkrc-2.0
+config/kactivitymanagerd-switcher
+config/katemetainfos
+config/kdeglobals
+config/ksslcertificatemanager
+config/plasma-nm
+config/user-dirs.dirs
+config/user-dirs.locale
