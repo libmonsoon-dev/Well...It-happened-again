@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source  "$(dirname "$0")/../../bash.lib.sh"
+source "$(dirname "$0")/../../bash.lib.sh"
 
 #TODO: install docker engine https://docs.docker.com/engine/install/ubuntu/
 sudo apt update
