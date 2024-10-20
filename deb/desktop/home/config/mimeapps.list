@@ -1,0 +1,42 @@
+[Added Associations]
+application/pdf=okularApplication_pdf.desktop;libreoffice-draw.desktop;chromium_chromium.desktop;
+application/x-ms-dos-executable=wine-2.desktop;mono-runtime-terminal.desktop;mono-runtime-common.desktop;
+audio/mpeg=vlc.desktop;org.kde.elisa.desktop;rhythmbox.desktop;kmplayer.desktop;
+inode/directory=org.kde.dolphin.desktop;
+text/x-matlab=org.kde.kate.desktop;org.octave.Octave.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;code.desktop;
+video/mp4=vlc.desktop;kmplayer.desktop;
+video/quicktime=vlc.desktop;kmplayer.desktop;
+video/webm=vlc.desktop;kmplayer.desktop;firefox.desktop;chromium_chromium.desktop;
+video/x-matroska=vlc.desktop;
+video/x-msvideo=vlc.desktop;kmplayer.desktop;
+x-scheme-handler/geo=google-maps-geo-handler.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
+x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
+
+[Default Applications]
+application/pdf=okularApplication_pdf.desktop;
+application/x-ms-dos-executable=wine-2.desktop;
+audio/mpeg=vlc.desktop;
+inode/directory=org.kde.dolphin.desktop;
+text/html=firefox.desktop
+text/x-matlab=org.kde.kate.desktop;
+video/mp4=vlc.desktop;
+video/quicktime=vlc.desktop;
+video/webm=vlc.desktop;
+video/x-matroska=vlc.desktop;
+video/x-msvideo=vlc.desktop;
+x-scheme-handler/geo=google-maps-geo-handler.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
+x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/slack=slack.desktop
+x-scheme-handler/ss=Outline.desktop
+x-scheme-handler/ssconf=Outline.desktop
+x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
+
+[Removed Associations]
+application/pdf=org.inkscape.Inkscape.desktop;gimp.desktop;display-im6.q16.desktop;
+application/x-ms-dos-executable=wine-2.desktop;
