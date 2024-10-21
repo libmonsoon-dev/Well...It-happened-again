@@ -10,6 +10,8 @@ fi
 
 echo "Rebasing from ${FROM} to ${TO}"
 COMMIT="$(git merge-base HEAD main)"
-echo "Reset to merge base commit: $COMMIT"
-git reset --soft "$COMMIT"
-git commit --reuse-message=HEAD@{1}
+NUMBER_COMMITS_IN_BRANCH="$(git rev-list --count "${COMMIT}")"
+echo "Reset to merge base commit: ${COMMIT} (${NUMBER_COMMITS_IN_BRANCH})"
+#TODO: if NUMBER_COMMITS_IN_BRANCH != 1 do this and exit 1
+#git reset --soft "$COMMIT"
+#git commit --reuse-message=HEAD@{1}
