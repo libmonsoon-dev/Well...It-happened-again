@@ -58,7 +58,6 @@ config/kdeconnect/
 config/kdedefaults/
 config/kde.org/
 config/keepassx/
-config/lazygit/
 config/libaccounts-glib/
 config/libreoffice/
 config/LOOP/
@@ -112,3 +111,6 @@ config/ksslcertificatemanager
 config/plasma-nm
 config/user-dirs.dirs
 config/user-dirs.locale
+
+# Recently open files and so on. Nothing interesting
+config/lazygit/state.yml

@@ -1,0 +1,7 @@
+git:
+  autoFetch: false
+  commit:
+    signOff: true
+
+gui:
+  language: en
