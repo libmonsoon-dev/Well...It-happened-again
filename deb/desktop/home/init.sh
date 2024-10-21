@@ -10,7 +10,6 @@ env
 sleep 3
 
 /usr/bin/firefox &
-thunderbird &
 #spotify || "spotify error" &
 
 konsole -e "bash -c 'tmux attach || tmux'" &
